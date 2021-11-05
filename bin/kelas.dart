@@ -17,6 +17,16 @@ class Orang{
     print("saya tinggal di $negara dan nama saya $nama");
   }
 
+  void myProfil(){
+    print(nama);
+    print(alamat);
+    print(negara);
+  }
+
+  void myAlamat(String Alamatku){
+    print(Alamatku);
+  }
+
 
 
 }
@@ -41,5 +51,9 @@ void main(){
   orang3.sayHello("diway");
   orang3.getName();
   orang3.holla();
+  orang3.myAlamat("setu bekasi jawa barat");
+
+
+
 
 }
