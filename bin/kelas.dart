@@ -4,7 +4,23 @@ class Orang{
   String? alamat;
 
   final String negara = "Indonesia";
+
+  void sayHello(String paramName){
+    print("Hello, nama saya $paramName, saya asli $negara");
+  }
+
+  String holla(){
+    return "nama $nama saya baru belajar dart";
+  }
+
+  void getName(){
+    print("saya tinggal di $negara dan nama saya $nama");
+  }
+
+
+
 }
+
 
 
 void main(){
@@ -22,4 +38,8 @@ void main(){
 
   dynamic orang3 = Orang();
   print(orang3.nama);
+  orang3.sayHello("diway");
+  orang3.getName();
+  orang3.holla();
+
 }
