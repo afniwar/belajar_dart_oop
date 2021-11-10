@@ -1,18 +1,22 @@
-class Person {
-  String nama = "Diway Afniwar";
-  String? addr;
+class Person{
+  String name = "Guest";
+  String? alamat;
+  String negara = "Indonesia";
 
-  final String country = "Indonesia";
 
-  //contructor
-  Person(String paramName, String paramAddr) {
-    nama = paramName;
-    addr = paramAddr;
+  Person(String paramName, String paramAlamat, String paramNegara){
+    name = paramName;
+    alamat = paramAlamat;
+    negara = paramNegara;
   }
+
 }
 
-void main() {
-  var person = Person("angeline","setu bekasi");
-  print(person.nama);
-  print(person.addr);
+void main(){
+  var orang = Person("Diway","Setu Bekasi", "singapore");
+  print("nama : " + orang.name);
+  print("alamat : " + orang.alamat.toString());
+  print("negara : " + orang.negara);
+
+
 }
