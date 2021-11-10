@@ -3,10 +3,13 @@ class Person {
   String? alamat;
   String negara = "Indonesia";
 
-  Person(String paramName, String paramAlamat, String paramNegara) {
-    name = paramName;
-    alamat = paramAlamat;
-    negara = paramNegara;
+
+
+  // variable shadowing
+  Person(String name, String alamat, String negara) {
+    name = name; // hindari penamaan yg sama
+    alamat = alamat; // krn bisa terjadi shadowing
+    negara = negara; //variable tidak dapat mengakses data class utamanya
   }
 }
 
