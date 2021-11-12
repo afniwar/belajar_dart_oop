@@ -6,10 +6,10 @@ class Person {
   // this keyword cara kedua lebih ringkas
   // this formal parameter
   Person(this.name, this.alamat, this.negara);
-
+  // Named Constructor
   Person.withName(this.name);
 
-  Person.withAlamat(this.alamat, this.name);
+  Person.withAlamat(this.alamat);
 
   Person.withNegara(this.negara);
 }
@@ -23,15 +23,15 @@ void main() {
   dynamic person = Person.withName("Angeline Nasution");
   print("nama : " + person.name);
   print("alamat : " + person.alamat.toString());
-  //print("negara : " + person.negara);
+  print("negara : " + person.negara);
 
-  dynamic person1 = Person.withAlamat("Setu City", "Diway Gonzales");
+  dynamic person1 = Person.withAlamat("Setu City");
   print("nama : " + person1.name);
   print("alamat : " + person1.alamat.toString());
-  //print("negara : " + person1.negara);
+  print("negara : " + person1.negara);
 
-  dynamic person2 = Person.withNegara("Singapore");
-  //print("nama : " + person2.name);
-  //print("alamat : " + person2.alamat.toString());
+  dynamic person2 = Person.withNegara("Dubai");
+  print("nama : " + person2.name);
+  print("alamat : " + person2.alamat.toString());
   print("negara : " + person2.negara);
 }
