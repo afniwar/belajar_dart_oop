@@ -6,7 +6,6 @@ class ImmunData{
 }
 
 void main(){
-
   /*
   // tidak menggunakan const maka dart akan menganggap ada dua data yg harus di bandingkan sehingga hasil data akan false karena berbeda
   dynamic data1 = ImmunData(20, 20);
